@@ -1,0 +1,24 @@
+# Secure SA Cybersecurity Chatbot
+A C# Console Application designed to provide a secure entry point for cybersecurity information.
+
+## Features
+- **Secure Authentication:** Restricted access requiring the "Admin123" passcode.
+- **Multimedia Integration:** Automated voice greeting using the System.Media library.
+- **Custom UI:** Detailed ASCII branding and color-coded system status alerts.
+
+## Requirements
+- .NET 8.0 SDK
+- Audio file: `greeting.m4a.wav` (set to 'Copy Always' in properties)
+
+## How to Run
+1. Open the solution in Visual Studio 2022.
+2. Press F5 to build and run.
+3. Enter the passcode Admin123 to access the terminal.
+
+## References (Harvard Style)
+
+Microsoft (2024). *C# documentation*. [online] Available at: https://learn.microsoft.com/en-us/dotnet/csharp/ (Accessed: 31 March 2026).
+
+Microsoft (2024). *System.Media Namespace*. [online] Available at: https://learn.microsoft.com/en-us/dotnet/api/system.media (Accessed: 31 March 2026).
+
+Liberty, J. and MacDonald, B. (2009). *Learning C# 3.0*. Sebastopol: O'Reilly Media, Inc.
