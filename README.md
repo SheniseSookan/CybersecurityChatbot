@@ -24,11 +24,15 @@ A C# Console Application designed to provide a secure entry point for cybersecur
 2. Press F5 to build and run.
 3. Enter the passcode Admin123 to access the terminal.
 
+
 ## Video Demonstration
 
 You can watch the full walkthrough and code demonstration of the Secure SA Chatbot here:
 
 [▶️ Watch the Demonstration Video on YouTube](YOUTUBE LINK : https://youtu.be/77DaycPcTS4 )
+
+## screenshot of successful Cl workflow run 
+<img width="1918" height="957" alt="Screenshot 2026-03-31 203356" src="https://github.com/user-attachments/assets/e52bda39-8ae3-4760-a265-3c43b67dbf8a" />
 
 ## References (Harvard Style)
 
