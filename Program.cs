@@ -47,6 +47,7 @@ namespace CybersecurityChatbot
             // --- STEP 3: SESSION END ---
             Console.WriteLine("\n-----------------------------------------");
             Console.WriteLine("Press any key to close the secure session...");
+            // Keeps the session open until the user manually exits
             Console.ReadKey();
         }
     }
