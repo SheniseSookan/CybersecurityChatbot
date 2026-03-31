@@ -1,3 +1,12 @@
+## Code Attribution
+
+The following external libraries, snippets, and tools were utilized in the development of this project:
+
+* **System.Media Namespace:** Used for implementing the automated voice greeting functionality. Provided by the .NET Framework / Microsoft.
+* **ASCII Flow / Text-to-ASCII Tools:** Used to generate the "SECURE SA CHATBOT SYSTEM" branding logo for the console interface.
+* **GitHub Actions (.NET Core CI):** Automated build workflow configured using the official GitHub Actions marketplace template for Windows-based .NET environments.
+* **Microsoft Documentation:** Reference materials were consulted for the implementation of the `Console.ForegroundColor` and `Console.Beep` / `SoundPlayer` logic.
+
 # Secure SA Cybersecurity Chatbot
 A C# Console Application designed to provide a secure entry point for cybersecurity information.
 
@@ -14,6 +23,12 @@ A C# Console Application designed to provide a secure entry point for cybersecur
 1. Open the solution in Visual Studio 2022.
 2. Press F5 to build and run.
 3. Enter the passcode Admin123 to access the terminal.
+
+## Video Demonstration
+
+You can watch the full walkthrough and code demonstration of the Secure SA Chatbot here:
+
+[▶️ Watch the Demonstration Video on YouTube](YOUTUBE LINK : https://youtu.be/77DaycPcTS4 )
 
 ## References (Harvard Style)
 
