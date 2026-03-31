@@ -20,7 +20,7 @@ namespace CybersecurityChatbot
             string password = Console.ReadLine();
 
             // --- STEP 2: VERIFICATION LOGIC ---
-            if (password == "Admin123")
+            if (password == "Admin123") // Validates user credentials against system requirements
             {
                 // SUCCESS PATH
                 Console.Clear();
