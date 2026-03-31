@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* <!--CODE ATTRIBUTION-->
+
+<!--TITLE: (SECURE SA CYBERSECURITY CHATBOT)-->
+
+<!--AUTHOR: ( Adnan Yusra )-->
+
+<!--DATE: ( 31/03/2026 )-->
+
+<!--VERSION: (FIREST EDITION) -->
+
+<!--AVAILABLE: (https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B9C23B0F8-6BED-497E-B60C-1D56E59BEDAB%7D&file=PROG6221_MO.docx&action=default&mobileredirect=true)-->    
+*/
+using System;
 using System.IO;
 using System.Media;
 
