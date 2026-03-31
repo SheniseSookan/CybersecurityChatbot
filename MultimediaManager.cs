@@ -20,6 +20,7 @@ namespace CybersecurityChatbot
                 }
                 else
                 {
+                    // Renders the Secure SA visual branding in the console
                     Console.WriteLine("<< System: Sound file not found at " + path + " >>");
                 }
             }
