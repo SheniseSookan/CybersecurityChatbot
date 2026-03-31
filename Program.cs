@@ -11,6 +11,7 @@ namespace CybersecurityChatbot
 
             // --- STEP 1: SECURITY LOGIN ---
             Console.ForegroundColor = ConsoleColor.Yellow;
+            // Displays the restricted access header for user awareness
             Console.WriteLine("=========================================");
             Console.WriteLine("       SECURE SA ACCESS TERMINAL         ");
             Console.WriteLine("=========================================");
