@@ -16,7 +16,7 @@ namespace CybersecurityChatbot
                 if (File.Exists(path))
                 {
                     SoundPlayer player = new SoundPlayer(path);
-                    player.Play(); // Plays the welcome message
+                    player.Play(); // Triggers the .wav audio greeting for authenticated users
                 }
                 else
                 {
