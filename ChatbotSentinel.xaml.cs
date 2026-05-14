@@ -62,11 +62,12 @@ namespace CybersecurityChatbot
 
             frame.Child = panel;
 
-            if (lstChatHistory != null)
+            if (lstChatHistory != null) 
             {
                 lstChatHistory.Items.Add(frame);
                 lstChatHistory.ScrollIntoView(frame);
             }
+
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
