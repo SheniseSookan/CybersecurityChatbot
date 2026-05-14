@@ -36,7 +36,7 @@ namespace CybersecurityChatbot
                 Console.WriteLine("Audio Error: " + ex.Message);
             }
 
-            // Text now matches your Audio greeting
+            // The Text is now matching me Audio greeting
             AddMessage("CYBER BOT", "Welcome to the SecureSA Chatbot. Please verify your name to continue.", true);
         }
 
