@@ -39,7 +39,10 @@ namespace CybersecurityChatbot
 
                 mainContainer.Controls.Add(host);
                 Application.Run(mainContainer);
+                // Task 5: Handling data persistence for favorite topics
             }
+
+
         }
     }
 }
