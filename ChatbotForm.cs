@@ -145,6 +145,7 @@ namespace CybersecurityChatbot
             if (!topicFound)
             {
                 if (lowerInput.Contains("tip"))
+
                 {
                     Random rnd = new Random();
                     lstChatHistory.Items.Add($"BOT TIP: {randomTips[rnd.Next(randomTips.Count)]}");
