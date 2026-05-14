@@ -22,34 +22,33 @@ namespace CybersecurityChatbot
         {
             try
             {
-                // Finds the file in the debug folder where the app runs
+                // Ensure we are looking in the correct folder for the .wav file
                 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
 
                 if (File.Exists(path))
                 {
-                    SoundPlayer player = new SoundPlayer(path);
-                    player.Play(); // Triggers the .wav audio greeting for authenticated users
-                }
-                else
-                {
-                    // Renders the Secure SA visual branding in the console
-                    Console.WriteLine("<< System: Sound file not found at " + path + " >>");
+                    using (SoundPlayer player = new SoundPlayer(path))
+                    {
+                        player.Play(); // Plays the security greeting once
+                    }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Error playing sound: " + ex.Message);
+                // Silent catch ensures the app launches even if the speaker is muted
             }
         }
 
-        public void DisplayAsciiLogo()
+        public string GetAsciiLogo()
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("*****************************************");
-            Console.WriteLine("* SECURE SA CHATBOT SYSTEM              *");
-            Console.WriteLine("* STATUS: ACTIVE                        *");
-            Console.WriteLine("*****************************************");
-            Console.ResetColor();
+            // Improved 'Cyber' aesthetic for the new WPF UI
+            return @"
+    _________________________________________
+   /                                         \
+  |    >> SECURE SA CHATBOT SYSTEM <<         |
+  |    STATUS: ENCRYPTED & ACTIVE             |
+   \_________________________________________/
+            ";
         }
     }
 }

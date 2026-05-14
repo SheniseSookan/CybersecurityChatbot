@@ -1,66 +1,45 @@
-﻿/* <!--CODE ATTRIBUTION-->
-
-<!--TITLE: (SECURE SA CYBERSECURITY CHATBOT)-->
-
-<!--AUTHOR: ( Adnan Yusra )-->
-
-<!--DATE: ( 31/03/2026 )-->
-
-<!--VERSION: (FIREST EDITION) -->
-
-<!--AVAILABLE: (https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B9C23B0F8-6BED-497E-B60C-1D56E59BEDAB%7D&file=PROG6221_MO.docx&action=default&mobileredirect=true)-->    
-*/
-using System; // Secure SA Cybersecurity Chatbot
+﻿using System;
+using System.Windows.Forms;
+using System.Windows.Forms.Integration;
 
 namespace CybersecurityChatbot
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
-            // Initialize our helper class
-            MultimediaManager media = new MultimediaManager();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
 
-            // --- STEP 1: SECURITY LOGIN ---
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            // Displays the restricted access header for user awareness
-            Console.WriteLine("=========================================");
-            Console.WriteLine("       SECURE SA ACCESS TERMINAL         ");
-            Console.WriteLine("=========================================");
-            Console.ResetColor();
+            Console.WriteLine("SYSTEM ACCESS REQUIRED.");
+            Console.Write("ENTER CODE: ");
+            string password = Console.ReadLine() ?? "";
 
-            Console.Write("\nPLEASE ENTER ACCESS CODE: ");
-            string password = Console.ReadLine();
-
-            // --- STEP 2: VERIFICATION LOGIC ---
-            if (password == "Admin123") // Validates user credentials against system requirements
+            if (password == "Admin123")
             {
-                // SUCCESS PATH
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(">> IDENTITY VERIFIED. WELCOME AGENT.\n");
-                Console.ResetColor();
+                Form mainContainer = new Form
+                {
+                    Text = "ShieldBot - Cybersecurity Sentinel",
+                    Width = 550, // Matches XAML Width
+                    Height = 780, // Extra space for title bar
+                    StartPosition = FormStartPosition.CenterScreen,
+                    BackColor = System.Drawing.Color.Black
+                };
 
-                // RUN MULTIMEDIA
-                media.PlayVoiceGreeting("greeting.m4a.wav");
-                media.DisplayAsciiLogo();
+                // CRITICAL: Pointing to the new Class name
+                var sentinelUI = new ChatbotSentinel();
+                sentinelUI.InitializeComponent();
 
-                Console.WriteLine("\n[SYSTEM] Chatbot initialized and listening...");
+                ElementHost host = new ElementHost
+                {
+                    Dock = DockStyle.Fill,
+                    Child = sentinelUI
+                };
+
+                mainContainer.Controls.Add(host);
+                Application.Run(mainContainer);
             }
-            else
-            {
-                // FAILURE PATH
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n[!] ACCESS DENIED: UNAUTHORIZED USER DETECTED.");
-                Console.WriteLine("[!] ALARM TRIGGERED.");
-                Console.ResetColor();
-            }
-
-            // --- STEP 3: SESSION END ---
-            Console.WriteLine("\n-----------------------------------------");
-            Console.WriteLine("Press any key to close the secure session...");
-            // Keeps the session open until the user manually exits
-            Console.ReadKey();
         }
     }
 }
