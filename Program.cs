@@ -21,13 +21,13 @@ namespace CybersecurityChatbot
                 Form mainContainer = new Form
                 {
                     Text = "ShieldBot - Cybersecurity Sentinel",
-                    Width = 550, // Matches XAML Width
-                    Height = 780, // Extra space for title bar
+                    Width = 550, // Matches my XAML Width
+                    Height = 780, // Extra space for my title bar
                     StartPosition = FormStartPosition.CenterScreen,
                     BackColor = System.Drawing.Color.Black
                 };
 
-                // CRITICAL: Pointing to the new Class name
+                // CRITICAL: It is Pointing to the new Class name
                 var sentinelUI = new ChatbotSentinel();
                 sentinelUI.InitializeComponent();
 
@@ -39,7 +39,7 @@ namespace CybersecurityChatbot
 
                 mainContainer.Controls.Add(host);
                 Application.Run(mainContainer);
-                // Task 5: Handling data persistence for favorite topics
+                // Task 5: Handling data persistence for my favorite topics
             }
 
 
