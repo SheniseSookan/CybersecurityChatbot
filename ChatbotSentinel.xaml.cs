@@ -135,7 +135,6 @@ namespace CybersecurityChatbot
             }
             else
             {
-                
                 AddMessage("CYBER BOT", "I don't recognize that. Try asking about 'passwords' or 'tips'.", true);
             }
         }

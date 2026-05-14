@@ -22,7 +22,7 @@ namespace CybersecurityChatbot
         {
             try
             {
-                // Ensure we are looking in the correct folder for the .wav file
+                // i Ensure we are looking in // Multimedia: Initializing audio greeting
                 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
 
                 if (File.Exists(path))
