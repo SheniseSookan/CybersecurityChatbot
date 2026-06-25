@@ -44,7 +44,7 @@ The following external libraries, snippets, and tools were utilized in the devel
 ## Video Demonstration
 
 You can watch the full walkthrough, build execution, and code architectural demonstration of the Secure SA Chatbot here:
-* [▶️ Watch the Demonstration Video on YouTube](https://youtu.be/77DaycPcTS4)
+* [▶️ Watch the Demonstration Video on YouTube](https://youtu.be/l2riydvE2hM)
 
 ---
 
